@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="use_ext_scanner"
+        android:title="@string/title_switch_preference"
+        android:summary="@string/summary_switch_preference_yes_no"
+        android:defaultValue="false"
+    />
+</PreferenceScreen>

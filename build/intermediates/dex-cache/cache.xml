@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/gson-2.2.4-5520eb42bdd091a46e98cf937c1555c1bdc1f112.jar"
+        jar="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8"/>
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/classes-b0c6af74faa5030abf690453bfebf6be29987952.jar"
+        jar="/Users/awidarto/Documents/workspace/JayonPickUpProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="eb69b5c2e53e59d82f7439f3217f46f9d98f0c89"/>
+    <item
+        dex="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/picasso-2.1.1-4ef99932e4b2e0b39985d1fbd5be18902d45c496.jar"
+        jar="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/libs/picasso-2.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ab19bfb23f641f189b6dca9a4d393f8dc291103a"/>
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/picasso-2.1.1-9f56349e3298f9e6861a3a7774a237f3561d2d1f.jar"
+        jar="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/libs/picasso-2.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ab19bfb23f641f189b6dca9a4d393f8dc291103a"/>
+    <item
+        dex="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/classes-473e9908d9f1f6ca99231608bd75e6678f35ad44.jar"
+        jar="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="eb69b5c2e53e59d82f7439f3217f46f9d98f0c89"/>
+    <item
+        dex="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/classes-94301227ce6575d03f713012c7aecd01dc476d7f.jar"
+        jar="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.1/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="326868515a36f3aea301d9b66ed59749fba4a462"/>
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/classes-b7fc23412c0a4f8929cb617023ec4bc72eeb9f8b.jar"
+        jar="/Users/awidarto/Documents/workspace/JayonPickUpProject/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.1/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4e6c7a0434fd93fe0a482f1141cea21059873ee3"/>
+    <item
+        dex="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/classes-9be65b03361b78c6d53b2683ca91ea4de412336e.jar"
+        jar="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/exploded-aar/me.dm7.barcodescanner/zxing/1.1/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4e6c7a0434fd93fe0a482f1141cea21059873ee3"/>
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/classes-f82be1f5c3cc2101f113a52986113ff381ce9e68.jar"
+        jar="/Users/awidarto/Documents/workspace/JayonPickUpProject/build/intermediates/exploded-aar/me.dm7.barcodescanner/core/1.1/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="326868515a36f3aea301d9b66ed59749fba4a462"/>
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/core-2.2-34aa246b5cb894fa8c5593e22d8059f778eaa6d1.jar"
+        jar="/Users/awidarto/.gradle/wrapper/dists/gradle-1.9-all/caches/modules-2/files-2.1/com.google.zxing/core/2.2/cba0b93b0072105d808ef7a00a107a4eb97874e7/core-2.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="cba0b93b0072105d808ef7a00a107a4eb97874e7"/>
+    <item
+        dex="/Users/awidarto/Documents/workspace/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/support-v4-19.0.1-3bf117e59e2e0f41bbf9219f2be90cdcf1dd583d.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="587da9a481ffd341d2fa091704489b89845ddacd"/>
+    <item
+        dex="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/build/intermediates/pre-dexed/debug/gson-2.2.4-0d10b036beada4b20ed1f3d0846fcd1bf50a283d.jar"
+        jar="/Users/awidarto/AndroidStudioProjects/JayonPickUpProject/JayonPickUp/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8"/>
+
+</pre-dex-items>

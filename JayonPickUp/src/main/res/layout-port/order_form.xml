@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:longClickable="false"
+            android:padding="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kode Order"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblOrderNumber"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Code"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblTrxId"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btScanCode"
+                    android:layout_toRightOf="@+id/lblOrderNumber" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btScanCode"
+                    android:background="@drawable/ic_action_camera" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pembeli"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblBuyer"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/buyer_name"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/lblBuyer" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penerima"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblRecipient"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:id="@+id/recipient_name"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/lblRecipient" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Pengiriman"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblDeliverytype"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="24dp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:textSize="12sp"
+                    android:id="@+id/deliverytype"
+                    android:entries="@array/deliverytype"
+                    android:spinnerMode="dialog"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/lblDeliverytype" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kota"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblDeliverycity"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="24dp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:textSize="12sp"
+                    android:entries="@array/deliverytype"
+                    android:id="@+id/deliverycity"
+                    android:spinnerMode="dialog"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/lblDeliverycity" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kecamatan"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblDeliveryzone"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="24dp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:textSize="12sp"
+                    android:entries="@array/deliverytype"
+                    android:id="@+id/deliveryzone"
+                    android:spinnerMode="dialog"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/lblDeliveryzone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berat"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblweight"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:paddingRight="24dp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:textSize="12sp"
+                    android:entries="@array/deliverytype"
+                    android:id="@+id/weight"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:spinnerMode="dialog"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/lblweight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai / Harga Paket"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/lblPrice"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+
+                <EditText
+                    android:layout_toRightOf="@id/lblPrice"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:id="@+id/unit_price" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ongkos Kirim"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/lblDeliverycost" />
+                <TextView
+                    android:layout_toRightOf="@+id/lblDeliverycost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/deliverycost"
+                    android:padding="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="gravity" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COD Surcharge"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:id="@+id/lblCODSurcharge" />
+                <TextView
+                    android:layout_toRightOf="@+id/lblCODSurcharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/codsurcharge"
+                    android:gravity="right"
+                    android:padding="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="gravity" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_pic"
+                        android:textSize="10sp"
+                        android:id="@+id/lblPicAddress"
+                        />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:clickable="true"
+                        android:background="@color/lightgrey"
+                        android:id="@+id/pic_address"
+                        android:layout_below="@+id/lblPicAddress"
+                        android:layout_alignParentLeft="true" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/side_pic"
+                        android:textSize="10sp"
+                        android:id="@+id/lblPic1" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:background="@color/lightgrey"
+                        android:clickable="true"
+                        android:id="@+id/pic_1"
+                        android:layout_below="@+id/lblPic1"
+                        android:layout_alignParentLeft="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/front_pic"
+                        android:textSize="10sp"
+                        android:id="@+id/lblPic2" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:clickable="true"
+                        android:background="@color/lightgrey"
+                        android:id="@+id/pic_2"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="13dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/top_pic"
+                        android:textSize="10sp"
+                        android:id="@+id/lblPic3" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="80dp"
+                        android:clickable="true"
+                        android:background="@color/lightgrey"
+                        android:id="@+id/pic_3"
+                        android:layout_below="@+id/lblPic3"
+                        android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:drawableLeft="@drawable/ic_action_save"
+                    android:id="@+id/bt_save_next"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

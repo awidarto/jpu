@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 16
+    }
+}
+
+dependencies {
+    compile files('libs/picasso-2.1.1.jar')
+    compile files('libs/gson-2.2.4.jar')
+
+    compile 'com.android.support:appcompat-v7:19.0.0'
+    compile 'com.android.support:support-v4:19.0.0'
+    compile 'me.dm7.barcodescanner:zxing:1.1'
+}

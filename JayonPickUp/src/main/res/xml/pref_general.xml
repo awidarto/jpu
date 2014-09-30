@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <EditTextPreference
+        android:key="courier_name"
+        android:title="@string/pref_courier_display_name"
+        android:defaultValue="@string/pref_default_courier_name"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <EditTextPreference
+        android:key="device_identifier"
+        android:title="@string/pref_title_device_identifier"
+        android:defaultValue="@string/pref_default_device_identifier"
+        android:selectAllOnFocus="true"
+        android:inputType="textCapWords"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <com.kickstartlab.android.jayonpickup.KeyDialog
+        android:key="device_key"
+        android:title="@string/pref_device_key_name"
+        android:defaultValue="@string/pref_default_device_key"
+        />
+
+
+
+    <EditTextPreference
+        android:key="passkey"
+        android:title="Passkey"
+        android:inputType="textPassword"
+        android:capitalize="none"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+</PreferenceScreen>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:longClickable="false"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/lblTrxId" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Pengiriman"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/lblDeliverytype" />
+            <TextView
+                android:layout_toRightOf="@+id/lblDeliverytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/deliverytype"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="gravity"
+                android:gravity="right" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/lblDeliverycity" />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblDeliverycity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/deliverycity"
+                android:layout_alignParentEnd="true"
+                android:gravity="right" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecamatan"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/lblDeliveryzone" />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblDeliveryzone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/deliveryzone"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="gravity"
+                android:gravity="right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/lblweight" />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/weight"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:textAlignment="gravity" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai / Harga Paket"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/lblPrice" />
+
+            <TextView
+                android:layout_toRightOf="@id/lblPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:id="@+id/unit_price"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:textAlignment="gravity" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ongkos Kirim"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lblDeliverycost"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_toRightOf="@+id/lblDeliverycost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/deliverycost"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="gravity"
+                android:gravity="right" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD Surcharge"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/lblCODSurcharge"
+                android:padding="8dp" />
+            <TextView
+                android:layout_toRightOf="@+id/lblCODSurcharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/codsurcharge"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="gravity"
+                android:gravity="right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Alamat"
+            android:id="@+id/lblPicAddress"
+            android:height="24dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/lightgrey"
+            android:id="@+id/pic_address"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Samping"
+            android:height="24dp"
+            android:id="@+id/lblPic1" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/lightgrey"
+            android:clickable="true"
+            android:id="@+id/pic_1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Depan"
+            android:height="24dp"
+            android:id="@+id/lblPic2" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/lightgrey"
+            android:id="@+id/pic_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto Atas"
+            android:height="24dp"
+            android:id="@+id/lblPic3" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@color/lightgrey"
+            android:id="@+id/pic_3" />
+    </LinearLayout>
+
+</LinearLayout>

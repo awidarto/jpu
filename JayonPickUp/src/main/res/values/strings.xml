@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JEX Pick Up</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_order">Order Baru</string>
+    <string name="title_activity_view_order">Detail Order</string>
+    <string name="title_activity_shop_list_fragment">ShopListFragment</string>
+    <string name="title_activity_order">Order</string>
+    <string name="title_activity_add_order">Buat Order</string>
+
+    <string-array name="deliverytype">
+        <item>COD</item>
+        <item>CCOD</item>
+        <item>DO</item>
+        <item>PS</item>
+    </string-array>
+
+    <string name="title_activity_order_edit">Edit Order</string>
+    <string name="title_activity_signature">Tanda Tangan</string>
+    <string name="labelsignatureshort">TTD</string>
+    <string name="labelsignature">Tanda Tangan</string>
+    <string name="clearsignature">Ulang</string>
+    <string name="cancelsignature">Batal</string>
+    <string name="commitsignature">Simpan</string>
+    <string name="uploadsignature">Upload TTD</string>
+    <string name="title_activity_shops_list">Shops</string>
+    <string name="title_activity_orders_list">Orders</string>
+    <string name="front_pic">Depan</string>
+    <string name="side_pic">Samping</string>
+    <string name="address_pic">Alamat</string>
+    <string name="top_pic">Atas</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pass_dialog_title">Pass Key</string>
+    <string name="pass_dialog_message">Enter Passkey</string>
+    <string name="request_key">Request Key</string>
+    <string name="title_activity_scan">Scan Code</string>
+    <string name="upload_url">http://www.jayonexpress.com/api/mobile/v2/pickup/key/12345678/format/json</string>
+    <string name="zone_url">http://www.jayonexpress.com/api/mobile/v2/zone/key/12345678/format/json</string>
+    <string name="merchant_url">http://www.jayonexpress.com/api/mobile/v2/merchant/key/12345678/format/json</string>
+    <string name="data_url">http://www.jayonexpress.com/api/mobile/v2/pickup/key/12345678/format/json</string>
+    <string name="status_url">http://www.jayonexpress.com/api/mobile/v2/pustatus/key/12345678/format/json</string>
+    <string name="trxchange_url">http://www.jayonexpress.com/api/mobile/v2/trxchange/key/12345678/format/json</string>
+    <string name="will_pickup">akan diambil</string>
+    <string name="is_picked_up">sudah diambil</string>
+    <string name="is_scanned">sudah diambil</string>
+    <string name="is_canceled">batal diambil</string>
+    <string name="title_activity_scanner">ScannerActivity</string>
+    <string name="summary_switch_preference_yes_no">Use external scanner app ( ZXing )</string>
+    <string name="title_switch_preference">Use External App</string>
+    <string name="pref_header_scan">Barcode Scanner App</string>
+    <string name="order_cancel">Batal</string>
+    <string name="order_delete">Hapus</string>
+    <string name="order_save">Simpan</string>
+    <string name="order_edit">Edit</string>
+    <string name="pickup_cancel">Batal Ambil Order</string>
+    <string name="pickup_cancel_message">Anda yakin untuk membatalkan pengambilan paket ini ?</string>
+    <string name="act_yes">Ya</string>
+    <string name="act_no">Tidak</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/darkergrey">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Merchant"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/merchant_title"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:id="@+id/search_merchant"
+        android:drawableEnd="@drawable/ic_action_search"
+        android:layout_gravity="left|center_vertical" />
+
+    <ListView android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+
+    <TextView android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:text="No Data"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/darkergrey">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/shop_name"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="#FFFFFF" />
+
+
+        <ImageButton
+            android:id="@+id/order_add_new"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_action_new"
+            android:background="@color/grey"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignTop="@+id/btScanCode"
+            android:layout_alignParentRight="true" />
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/btScanCode"
+            android:background="@color/grey"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/ic_action_camera_light"
+            android:layout_alignTop="@+id/shop_name"
+            android:layout_toLeftOf="@+id/order_add_new" />
+    </RelativeLayout>
+    <ListView android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:text="No Data"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#eeeeee" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@color/lightgrey"
+        android:layout_gravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Berat"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/lblTotalKg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalKg"
+                android:gravity="center_vertical|right"
+                android:textAlignment="gravity"
+                android:layout_alignBottom="@+id/lblTotalKg"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/signaturePic"
+                android:layout_alignLeft="@+id/totalCOD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total COD"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_below="@+id/lblTotalKg"
+                android:id="@+id/lblTotalCOD" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalCOD"
+                android:gravity="center_vertical|right"
+                android:textAlignment="gravity"
+                android:layout_alignBottom="@+id/lblTotalCOD"
+                android:layout_alignTop="@+id/lblTotalCOD"
+                android:layout_toLeftOf="@+id/signaturePic"
+                android:layout_toRightOf="@+id/lblTotalDelivery" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Ongkir"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_below="@+id/lblTotalCOD"
+                android:id="@+id/lblTotalDelivery" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalDeliveryCost"
+                android:gravity="center_vertical|right"
+                android:textAlignment="gravity"
+                android:layout_alignBottom="@+id/lblTotalDelivery"
+                android:layout_toRightOf="@+id/lblTotalDelivery"
+                android:layout_alignTop="@+id/lblTotalDelivery"
+                android:layout_toLeftOf="@+id/signaturePic" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/signaturePic"
+                android:contentDescription="signaturePicture"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_action_camera"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/btSignature"
+                android:padding="4dp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelsignature"
+                android:id="@+id/btSignature"
+                android:layout_below="@+id/totalDeliveryCost"
+                android:layout_toLeftOf="@+id/signaturePic" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploadsignature"
+                android:id="@+id/btUploadSignature"
+                android:layout_below="@+id/signaturePic"
+                android:layout_alignRight="@+id/signaturePic"
+                android:layout_toRightOf="@+id/totalDeliveryCost" />
+        </RelativeLayout>
+
+        </FrameLayout>
+
+
+</LinearLayout>
